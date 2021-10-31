@@ -19,7 +19,7 @@ $ git clone https://www.github.com/prince-curie/matcher.git
 $ cd matcher
 ```
 
-#### Change directory to a service directory
+#### Move to a service directory
 ```bash
 $ cd matcher-property
 ```
