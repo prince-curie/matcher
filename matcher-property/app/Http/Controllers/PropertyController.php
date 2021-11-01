@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Property;
 use Illuminate\Support\Facades\Http;
-use Illuminate\Support\Facades\Response;
+use Illuminate\Http\Response;
 
 class PropertyController extends Controller
 {
@@ -18,6 +18,6 @@ class PropertyController extends Controller
     {
         $response = Http::get('http://127.0.0.1:8001/api/search', $property->toArray());
         
-        return Response::json($response->body(), $response->status);
+        return response($response->body(), $response->status());
     }
 }
